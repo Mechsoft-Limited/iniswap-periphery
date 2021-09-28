@@ -1,4 +1,4 @@
-const Router = artifacts.require("PancakeRouter");
+const Router = artifacts.require("IniRouter");
 const safeMath = artifacts.require("SafeMath");
 
 const fs = require('fs');

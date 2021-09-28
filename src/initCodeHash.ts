@@ -1,0 +1,1 @@
+export const INIT_CODE_HASH = '0x2622ae0a20a0a85cb1f56036f46c5a7dba1ba066f35b97618afad906411abea2'

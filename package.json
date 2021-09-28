@@ -15,6 +15,7 @@
     "contracts"
   ],
   "dependencies": {
+    "@ethersproject/solidity": "^5.4.0",
     "@uniswap/lib": "1.1.1",
     "@uniswap/v2-core": "^1.0.1",
     "truffle-hdwallet-provider": "^1.0.17",
@@ -43,6 +44,7 @@
     "compile": "waffle .waffle.json",
     "postcompile": "yarn copy-v1-artifacts",
     "pretest": "yarn compile",
+    "compute:codehash": "ts-node ./src/generateInitHash.ts",
     "test": "mocha",
     "prepublishOnly": "yarn test"
   },
