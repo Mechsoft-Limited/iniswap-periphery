@@ -47,6 +47,7 @@ module.exports = {
     },
     binanceTestnet: {
       network_id:97,
+      networkCheckTimeout: 999999,
       provider: () => new HDWalletProvider({
         privateKeys:[privateKey], 
         chainId:97,
@@ -93,7 +94,7 @@ module.exports = {
       settings: {          // See the solidity docs for advice about optimization and evmVersion
        optimizer: {
          enabled: true,
-         runs: 1000
+         runs: 9999
        },
        evmVersion: "istanbul"
       }

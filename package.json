@@ -42,6 +42,8 @@
     "lint:fix": "yarn prettier ./test/*.ts --write",
     "clean": "rimraf ./build/",
     "copy-v1-artifacts": "ncp ./buildV1 ./build",
+    "migrate:reset": "truffle migrate --network binanceTestnet --reset",
+    "migrate": "truffle migrate --network binanceTestnet",
     "precompile": "yarn clean",
     "compile": "waffle .waffle.json",
     "postcompile": "yarn copy-v1-artifacts",
