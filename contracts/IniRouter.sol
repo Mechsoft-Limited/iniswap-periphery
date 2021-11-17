@@ -16,12 +16,10 @@ contract IniRouter is IIniRouter02 {
     address public immutable override WETH;
 
     modifier ensure(uint deadline) {
-        _ensure(deadline);
+       require(deadline >= block.timestamp, 'IniRouter: EXPIRED');
         _;
     }
-   function _ensure(uint deadline) internal view{
-     require(deadline >= block.timestamp, 'IniRouter: EXPIRED');
-   }
+
     constructor(address _factory, address _WETH) public {
         factory = _factory;
         WETH = _WETH;

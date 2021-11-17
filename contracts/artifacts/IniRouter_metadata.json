@@ -1022,10 +1022,10 @@
 			]
 		},
 		"contracts/IniRouter.sol": {
-			"keccak256": "0x9a78ba87c17d570c08bed8d1808ae1df4519f62d745bbe31260c614068b76f4e",
+			"keccak256": "0x17fdb637206a9de61b13c42835a2d27de804ad1d5f2bb1ac43dec4850e653c7e",
 			"urls": [
-				"bzz-raw://2518afb6eca7144ca29ea212a1e7bc49500a4610dc71e542f7ac4f3f5106fb80",
-				"dweb:/ipfs/QmWUNBDfcDijHCweDP88ScAhwUwXFuW9pMDK9P9nzsPma4"
+				"bzz-raw://64d519172bfc72d90a51a2d944e501f1e95f22a8ec5c946052241043f1164732",
+				"dweb:/ipfs/QmfZqwWiQEtwFFwzbwtqLXKNA24UAp95d5sw3KZgDZLByp"
 			]
 		},
 		"contracts/interfaces/IERC20.sol": {
@@ -1057,10 +1057,10 @@
 			]
 		},
 		"contracts/libraries/IniLibrary.sol": {
-			"keccak256": "0x3da9eb65785c623fa773f6fbcbcd61bb4e0994a12d53063ca35b034edc62478e",
+			"keccak256": "0x45ac0cf9cead0c3f59de2f2591ddcb5eb1d600e6fbdc7f458b66a87abd55245c",
 			"urls": [
-				"bzz-raw://452cbdc84a538bff0530a30ba844b16f7033fc16a113b57a0e59db40b9c1465b",
-				"dweb:/ipfs/QmazuvvBrEcFJorLUid7BACoVfiD48cVmA95amzv6vZEg6"
+				"bzz-raw://d367e0eab348f3832c5d5b2efe5b85429ec04fcf6d3f2167e533bd2c278019ce",
+				"dweb:/ipfs/QmdTYYpKmzcYBpaceFWMTkmQ4BCTgej1hrLTPdXvj2tuh9"
 			]
 		},
 		"contracts/libraries/SafeMath.sol": {

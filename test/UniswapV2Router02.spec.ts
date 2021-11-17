@@ -8,7 +8,7 @@ import IUniswapV2Pair from '@uniswap/v2-core/build/IUniswapV2Pair.json'
 import { v2Fixture } from './shared/fixtures'
 import { expandTo18Decimals, getApprovalDigest, MINIMUM_LIQUIDITY } from './shared/utilities'
 
-import DeflatingERC20 from '../build/DeflatingERC20.json'
+import DeflatingERC20 from '../build/contracts/DeflatingERC20.json'
 import { ecsign } from 'ethereumjs-util'
 
 chai.use(solidity)

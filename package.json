@@ -16,10 +16,10 @@
   ],
   "dependencies": {
     "@ethersproject/solidity": "^5.4.0",
+    "@iniswap/core": "0.0.2",
     "@truffle/hdwallet-provider": "^1.5.0",
     "@uniswap/lib": "1.1.1",
     "@uniswap/v2-core": "^1.0.1",
-    "@iniswap/core": "^0.0.1",
     "truffle-hdwallet-provider": "^1.0.17",
     "truffle-plugin-verify": "^0.4.0"
   },
@@ -27,7 +27,7 @@
     "@types/chai": "^4.2.6",
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
-    "ethereum-waffle": "^2.4.1",
+    "ethereum-waffle": "2.4.1",
     "ethereumjs-util": "^6.2.0",
     "mocha": "^6.2.2",
     "ncp": "^2.0.0",
@@ -45,12 +45,18 @@
     "migrate:reset": "truffle migrate --network binanceTestnet --reset",
     "migrate": "truffle migrate --network binanceTestnet",
     "precompile": "yarn clean",
-    "compile": "waffle .waffle.json",
+    "compile": "truffle compile",
+    "compilef": "waffle .waffle.json",
     "postcompile": "yarn copy-v1-artifacts",
     "pretest": "yarn compile",
-    "compute:codehash": "ts-node ./src/generateInitHash.ts",
+    "addresses": "ts-node ./src/getAddresses.ts",
     "test": "mocha",
-    "prepublishOnly": "yarn test"
+    "prepublishOnly": "yarn addresses"
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+
 }

@@ -4,17 +4,17 @@ import { deployContract } from 'ethereum-waffle'
 
 import { expandTo18Decimals } from './utilities'
 
-import IniFactory from '@uniswap/v2-core/build/IniFactory.json'
-import IIniPair from '@uniswap/v2-core/build/IIniPair.json'
+import IniFactory from '@uniswap/v2-core/build/contracts/IniFactory.json'
+import IIniPair from '@uniswap/v2-core/build/contracts/IIniPair.json'
 
-import ERC20 from '../../build/ERC20.json'
-import WETH9 from '../../build/WETH9.json'
+import ERC20 from '../../build/contracts/ERC20.json'
+import WETH9 from '../../build/contracts/WETH9.json'
 import UniswapV1Exchange from '../../build/UniswapV1Exchange.json'
 import UniswapV1Factory from '../../build/UniswapV1Factory.json'
-import IniRouter01 from '../../build/IniRouter01.json'
-import IniMigrator from '../../build/IniMigrator.json'
-import IniRouter02 from '../../build/IniRouter.json'
-import RouterEventEmitter from '../../build/RouterEventEmitter.json'
+import IniRouter01 from '../../build/contracts/IniRouter01.json'
+import IniMigrator from '../../build/contracts/IniMigrator.json'
+import IniRouter02 from '../../build/contracts/IniRouter.json'
+import RouterEventEmitter from '../../build/contracts/RouterEventEmitter.json'
 
 const overrides = {
   gasLimit: 9999999
@@ -70,6 +70,7 @@ export async function v2Fixture(provider: Web3Provider, [wallet]: Wallet[]): Pro
 
   // initialize V2
   await factoryV2.createPair(tokenA.address, tokenB.address)
+  await factoryV2.setFeeTo(wallet.address);
   const pairAddress = await factoryV2.getPair(tokenA.address, tokenB.address)
   const pair = new Contract(pairAddress, JSON.stringify(IIniPair.abi), provider).connect(wallet)
 
