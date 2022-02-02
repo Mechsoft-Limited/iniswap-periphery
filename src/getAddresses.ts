@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 const { FACTORY_ADDRESS,INIT_CODE_HASH } = require('@iniswap/core/build');
-const router = fs.readFileSync(path.join(__dirname,'../address.txt'),'utf8');
+const router = fs.readFileSync(path.join(__dirname,'../binance_address.txt'),'utf8');
 
 const addresses = `
   module.exports ={

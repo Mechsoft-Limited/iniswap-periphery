@@ -1584,10 +1584,10 @@
   dependencies:
     browser-headers "^0.4.1"
 
-"@iniswap/core@0.0.2":
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/@iniswap/core/-/core-0.0.2.tgz#8fb284737b7f025c4875c941d9dda9d0c2d927a4"
-  integrity sha512-Km7NFMHc1mTenlcYhWIpS2K9xdbwElIrGPHBK1TX8qgktXSiNNrOQPX/zw2uW6BUKCb51GPb1nt7fVg1+JdUig==
+"@iniswap/core@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@iniswap/core/-/core-1.0.0.tgz#d82d7326a7562c9dd47c55e4718924d912ea065f"
+  integrity sha512-udJaIYaHpmJ4iDGbkWiVSjy3YyUDrDb7Ih67yR3EnR5lcUNDG2Ht9swWukuabF1FmbpjHYvhm6L1v8EuZJTh+g==
   dependencies:
     "@ethersproject/solidity" "^5.5.0"
     "@truffle/hdwallet-provider" "^1.5.0"

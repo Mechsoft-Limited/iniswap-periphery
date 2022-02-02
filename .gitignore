@@ -3,3 +3,4 @@ node_modules/
 linkfiles.sh
 address.txt
 .secret
+.ganachesecret
