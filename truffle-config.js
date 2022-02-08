@@ -23,8 +23,15 @@
  const path = require('path');
  const privateKey = fs.readFileSync(".ganachesecret").toString().trim();
  const mnemonic = fs.readFileSync(path.join(__dirname,"../.ganachesecretMainet")).toString().trim();
+ const BSCSCANAPIKEY = fs.readFileSync(path.join(__dirname,"../.bscscankey")).toString().trim();
 
-module.exports = {
+ module.exports = {
+   plugins: [
+     'truffle-plugin-verify'
+   ],
+   api_keys: {
+     bscscan: BSCSCANAPIKEY
+   },
   /**
    * Networks define how you connect to your ethereum client and let you set the
    * defaults web3 uses to send transactions. If you don't specify one truffle
@@ -110,9 +117,9 @@ module.exports = {
       settings: {          // See the solidity docs for advice about optimization and evmVersion
        optimizer: {
          enabled: true,
-         runs: 1000
+         runs: 999999
        },
-      // evmVersion: "istanbul"
+       // evmVersion: "istanbul"
       }
     }
   },
